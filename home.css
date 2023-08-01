@@ -1,0 +1,601 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+   
+
+}
+
+#one{
+    display: flex;
+    justify-content: center;
+    border-bottom: 0.5px solid rgb(205, 195, 195);
+    max-width: 100%;
+}
+.one{
+   border-right: 1px solid rgb(205, 195, 195);
+   padding: 15px;
+    
+}
+
+.l1{
+    padding-right:10px;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+.one>a>i{
+    color: gray;
+}
+.one>a:hover,.one>a>i:hover{
+    color: dodgerblue;
+}
+nav{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: rgb(255, 255, 255);
+}
+nav{
+    position: sticky;
+    top: 0;
+}
+#logo{
+    margin: 25px 0px 15px 35px;
+    font-weight:bolder;
+    text-shadow: 1.5px 1.7px 2px ;
+    padding:15px;
+    text-decoration: underline;
+}
+#two>ul{
+   
+    display: flex;
+    justify-content:space-evenly;
+    margin: 25px 5px 15px 15px;
+    padding: 15px;
+    list-style: none;
+}
+#two>ul>li>a{
+ color: rgb(0, 0, 0); 
+ text-decoration: none; 
+ font-weight: bold;
+ font-size: 12px;
+}
+
+#button{
+    border: 2px solid rgb(0, 0, 0);
+    padding: 15px;
+    color: rgb(0, 0, 0) !important
+}
+#button:hover{
+    border: 2px solid dodgerblue;
+    background-color: dodgerblue;
+    color: white!important
+}
+#two>ul>li>a:hover{
+    color: dodgerblue;
+   
+}
+.slide{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+.mySlide{
+    display: none;
+}
+.fade>img{
+opacity: 0.8;
+}
+.prev,.next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+.prev:hover,.next:hover{
+    background-color: rgb(0, 0, 0,0.8);
+}
+.text{
+    color: rgb(31, 29, 29);
+    font-size: 65px;
+    padding: 8px 12px;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    font-weight: bolder;
+
+}
+.text>p>span{
+    font-size: 25px;
+}
+
+.bt1{
+    font-weight: bolder;
+    padding: 10px 35px;
+    background-color: dodgerblue;
+    border: 1px dodgerblue solid;
+    color: white;
+}
+.bt2{
+    font-weight: bolder;
+    padding: 10px 35px;
+    background-color: white;
+    border: 1px white solid;
+    color: dodgerblue;
+}
+.bt1:hover{
+    color: dodgerblue;
+    border: 1px dodgerblue solid;
+    background-color: white;
+}
+.bt2:hover{
+    border: 1px dodgerblue solid;
+    color: white;
+    background-color: dodgerblue;
+}
+.dot{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    user-select: none;
+}
+
+
+.active,.dot:hover{
+    background-color: dodgerblue;
+}
+.fade{
+    -webkit-animation: fade 1s ;
+    animation: fade 1s;
+}
+@-webkit-keyframes fade{
+    from{opacity: 0.4;}
+    to{opacity: 0.8;}
+
+}
+@keyframes fade{
+    from{opacity: 0.4;}
+    to{opacity: 0.8;} 
+}
+#three{
+    margin: 45px 0;
+    padding: 45px 77px;
+    display: grid;
+    grid-template-columns:33% 37% 35%;
+    overflow:scroll;
+   
+}
+#three::-webkit-scrollbar{
+    display: none;
+}
+
+main>#three{
+    background-color: #E8F4F4;
+}
+.three{
+    margin-right:65px ;
+    padding: 0 px;
+}
+.three>img{
+    width:370px;
+    height: 250px;
+}
+.three>div>h4{
+    padding: 10px;
+    font-size: 15px;
+}
+.three>div>p{
+    padding: 10px;
+    font-size: 14px;
+}
+.three>div>button{
+    margin: 10px;
+    
+}
+.three>form{
+    background-color: dodgerblue;
+    padding: 70px 30px;
+}
+.three>form>p{
+    margin-bottom:20px;
+    font-weight: bolder;
+    color: white;
+}
+.three>form>input{
+   padding: 10px 120px 7px 15px;
+   margin-bottom:4px;
+   border: 1px solid dodgerblue;
+   outline: none;
+}
+.three>form>textarea{
+    padding: 10px 122.5px 7px 15px;
+    margin-bottom:4px;
+    border: 1px solid dodgerblue;
+    outline: none;
+    
+}
+.three>form>input::placeholder,.three>form>textarea::placeholder{
+    color: #1A1A1A;
+}
+.three>form>button{
+    width:282px;
+    height:35px;
+    margin-bottom:4px;
+    font-size: 10px;
+    background-color: transparent;
+    color: white;
+    font-weight: bolder;
+    border: 1px white solid;  
+}
+.three>form>button:hover{
+    background-color: white;
+    color: dodgerblue;
+}
+#four{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    transition: 7s ease-in;
+}
+.text1{
+    margin:35px 50px;
+}
+.text1>h1{
+    margin: 21px 5px;
+    font-size: 27px;
+}
+.text1>p{
+    margin: 21px 5px;
+    font-weight: bolder;
+    font-size: 16px;
+}
+.ul1{
+    float: left;
+    font-size: 14px;
+    margin-left: 26px;
+    color: rgb(96, 92, 92);
+}
+.ul2>ul{
+    float: right;
+    font-size: 14px;
+    margin-right:26px;
+    color: rgb(96, 92, 92);
+}
+#bt3{
+    clear: both;
+    }
+#bt3>button{
+    margin: 35px 5px;
+    padding: 10px 24px;
+    font-weight: bolder ;
+   
+}
+.bt3{
+    background-color: white;
+}
+.bt4{
+    background-color: dodgerblue;
+    color: white;
+    border: 1px dodgerblue solid;
+}
+.bt3:hover{
+    background-color: black;
+    color: white;
+}
+.bt4:hover{
+    background-color: white;
+    color: dodgerblue;
+}
+.ph1>img{
+    margin: 15px 0 0 30px;
+    height:400px;
+}
+#five{
+    margin: 30px 0;
+    background-color: #E8F4F4;
+    padding: 45px;
+    transition: 7s ease-in;
+}
+#he1{
+    text-align: center;
+}
+#he1>h1{
+    font-weight: bolder;
+    padding: 5px;
+    font-size: 37px;
+}
+#he1>p{
+    font-size:19px;
+    padding: 10px;
+    color: rgb(96, 92, 92);
+}
+#he0{
+    margin:35px;
+    padding: 25px;
+    display: grid;
+    grid-template-columns:5% 28% 5% 28% 5% 28%
+}
+.he1{
+   font-size:36px;
+   padding: 25px;
+   color: dodgerblue;
+}
+.he0{
+    padding: 25px 30PX;
+}
+.he0>h5{
+  padding:5px 0;
+}
+.he0>p{
+    padding: 5px 0;
+    font-size: 14px;
+    color: rgb(96, 92, 92);
+}
+#six{
+    margin: 30px 0;
+    padding: 40px 0;
+    transition: 7s ease-in;
+}
+.new{
+    text-align: center;
+}
+.new>h1{
+    font-weight: bolder;
+    padding: 5px;
+    font-size: 37px;  
+}
+.new>p{
+    padding: 5px 0;
+    font-size: 14px;
+    color: rgb(96, 92, 92);
+}
+#new{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin:
+    45px 0;
+    margin-left: 65px;
+}
+.new1{
+    margin-right: 45px;
+    background-color: #E8F4F4 ;
+    
+}
+.new1>img{
+    width:400px;
+    height: 250px;
+}
+.new1>div>a{
+text-align: center;
+color: black;
+text-decoration: none;
+margin-left: 74px;
+margin-top: 5px;
+}
+.new1>div>a:hover{
+color: dodgerblue;
+}
+.new1>div>h6{
+    text-align: center;
+    color: gray;
+    margin: 5px;
+}
+.new1>div>p{
+    text-align: center;
+    color:  rgb(96, 92, 92) ;
+    margin: 20px 5px;
+}
+.new1>div>button{
+    margin: 5px 20px 30px 130px;
+    padding: 10px 30px;
+    border: 1px solid dodgerblue;
+    background-color: transparent;
+    color: dodgerblue;
+    font-weight: bolder;
+}
+.new1>div>button:hover{
+    background-color: dodgerblue;
+    color: white;
+    font-weight: bolder;
+}
+#seven{
+    background-color: #1F1F1F;
+    position: relative;
+    
+}
+
+#new3{
+    height: 450px;
+    width: 300px;
+    background-color: dodgerblue;
+    position: absolute;
+    right:120px;
+    top: 0;
+}
+.new3{
+    margin: 50px 5px 20px 30px;
+}
+.new4{
+    margin: 50px 5px 20px 30px;
+}
+.new3>h5{
+    color: white;
+    padding: 30px 0;
+    font-weight: bolder;
+}
+.l2{
+    color:  rgb(243, 237, 237) ;
+    font-size:14px;
+    text-decoration: none;
+}
+.l2>i{
+    margin-right: 10px;
+}
+.new4>h5{
+    color: white;
+    padding: 20px 0;
+    font-weight: bolder;
+}
+td{
+    padding: 10px 50px 10px 0;
+    color: white;
+    font-size: 12px;
+}
+td:nth-child(even){
+    font-weight: bolder;
+}
+footer{
+    background-color: #1F1F1F;
+    
+    
+}
+#last{
+    margin: auto 120px;
+    background-color: #1A1A1A;
+    padding: 30px 25px;
+    position: relative;
+}
+#last>p{
+    color: white;
+    font-weight: bolder;
+    font-size: 14px;
+    display: inline-block;
+    
+}
+.one1{
+    display: inline-block;
+    width: 30px;
+    height: 31px;
+    background-color: #1F1F1F;
+    margin: 0 15px  10px 10px ;
+}
+.one1>a>i{
+    padding: 7px;
+    font-size: 19px;
+    color: dodgerblue;
+}
+.one1>a>i:hover{
+    background-color: dodgerblue;
+    color: white;
+}
+.int{
+ display: inline-block;
+ position: absolute;
+ right:70px;
+}
+.int>input{
+    border: 1px solid #1F1F1F;
+    background-color: #1F1F1F;
+    padding: 7px 60px 7px 5px;
+    margin: 0 30px;
+    color: white;  
+    outline: none;   
+}
+.int>input::placeholder{
+    color: white;
+}
+.int>button{
+    border: 1px dodgerblue solid;
+    background-color: dodgerblue;
+    color: white;
+    font-weight: bolder;
+    padding: 7px 40px;
+}
+.int>button:hover{
+    background-color: white;
+    color: dodgerblue;
+    border: 1px solid white;
+}
+#eight{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 2fr;
+    margin: 50px 65px;
+   
+}
+.eight{
+    color: white;
+
+}
+.eight>h5{
+    font-size: 13px;
+    margin: 5px 0;
+    padding: 15px;
+    
+}
+.eight>p{
+    font-size: 15px;
+    margin-right:15px ;
+    padding: 15px;
+}
+.eight>ul>li{
+    list-style: none;
+    padding: 5px 15px;
+}
+.eight>ul>li>a{
+color: white;
+text-decoration: none;
+}
+.eight>ul>li>a:hover{
+    color: dodgerblue;
+}
+#last2{
+    background-color: #1A1A1A;
+}
+#last2{
+    display: grid;
+    grid-template-columns: 65% 25% 10%
+}
+#last2>p{
+    padding: 25px 35px;
+    color:#bbb;
+    font-size: 12px;
+}
+#last2>ul>li{
+    display: inline-block;
+    padding: 25px 15px 25px 15px;
+    list-style: none;
+    
+}
+#last2>ul>li>a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    font-size: 12px;
+}
+#last2>div{
+    width: 40px;
+    height:40px;
+    background-color: #1F1F1F;
+    padding: 12px;
+    margin: 12px 40px;
+}
+#last2>div>a{
+    color: white;
+    font-weight: bolder;
+     
+}
+#last2>div:hover{
+    background-color: dodgerblue;
+
+}
+button{
+    transition: 0.8s ease;
+}
